@@ -237,24 +237,26 @@
   footer{padding:36px 0 48px;position:relative;}
   footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;}
   footer p{margin:0;font-size:13.5px;color:var(--text-soft);}
-  footer .foot-links{display:flex;gap:18px;}
+  footer .foot-links{display:flex;gap:18px;flex-wrap:wrap;}
   footer .foot-links a{font-size:13.5px;color:var(--text-soft);text-decoration:none;}
   footer .foot-links a:hover{color:var(--accent);}
 
   @media (max-width:860px){
-    .hero-inner{grid-template-columns:1fr;padding-top:52px;}
-    .hero-art{order:-1;max-width:320px;margin:0 auto;}
+    .hero-inner{grid-template-columns:1fr;padding-top:40px;}
+    .hero-art{max-width:280px;aspect-ratio:5/4;margin:28px auto 0;}
     .about,.approach{grid-template-columns:1fr;}
     .portrait-frame{max-width:320px;margin:0 auto;}
     .pricing{grid-template-columns:1fr;}
     .contact{grid-template-columns:1fr;padding:40px 28px;}
     nav.links{display:none;}
-    section.clearing{padding:64px 0;}
+    section.clearing{padding:56px 0;}
   }
   @media (max-width:480px){
     .wrap{padding:0 20px;}
     .nav{padding:14px 20px;}
     .contact{border-radius:18px;}
+    section.clearing{padding:44px 0;}
+    .hero-inner{padding-top:32px;}
   }
 
   /* ---------- cookie banner ---------- */
@@ -347,17 +349,18 @@
     <svg class="deco deco-hero" viewBox="0 0 120 220" aria-hidden="true"><use href="#sprig"/></svg>
     <div class="hero-inner">
       <div>
-        <p class="eyebrow">Psychoterapia Gestalt i arteterapia</p>
+        <p class="eyebrow">Psychoterapia Gestalt i arteterapia w Krakowie oraz online</p>
         <h1>Spotkanie z sobą,<br>tu i teraz.</h1>
-        <p class="lede">Towarzyszę w procesie, w którym to, co dotąd niewidoczne, może stać się jasne — a to, co przytłaczające, znajdzie w końcu swoje miejsce.</p>
+        <p class="lede">Pomagam osobom, które doświadczają napięcia, lęku, przeciążenia, trudności w relacjach lub kryzysu życiowego. Pracuję uważnie, w kontakcie i w tempie, które pozwala bezpiecznie przyjrzeć się temu, co ważne.</p>
         <div class="hero-ctas">
           <a class="btn" href="#kontakt">Umów konsultację</a>
           <a class="btn ghost" href="#podejscie">Poznaj moje podejście</a>
         </div>
         <p class="trust-line">
-          <span>Certyfikowana psychoterapeutka Gestalt</span><span class="dot"></span>
-          <span>Arteterapeutka</span><span class="dot"></span>
-          <span>Stała superwizja u certyfikowanych superwizorów</span>
+          <span>Psychoterapia indywidualna dorosłych</span><span class="dot"></span>
+          <span>Sesje 50 min</span><span class="dot"></span>
+          <span>Gabinet / online</span><span class="dot"></span>
+          <span>Stała superwizja</span>
         </p>
       </div>
       <div class="hero-art">
@@ -384,14 +387,14 @@
       <div class="about-body">
         <p class="eyebrow">O mnie</p>
         <h2 style="margin-bottom:20px;">Magdalena Lech</h2>
-        <p>Jestem certyfikowaną psychoterapeutką Gestalt oraz arteterapeutką.</p>
-        <p>Do każdej osoby podchodzę indywidualnie, starając się jak najlepiej zrozumieć jej sytuację oraz trudności, z którymi się zgłasza. Ważne jest dla mnie, aby naprawdę zobaczyć człowieka.</p>
-        <p>W relacji terapeutycznej szczególnie ważne są dla mnie wzajemny szacunek, otwartość i autentyczność.</p>
-        <p>Zapraszam również osoby będące w trakcie szkoły psychoterapii, które poszukują własnej terapii.</p>
+        <p>Jestem psychoterapeutką Gestalt oraz arteterapeutką. Ukończyłam całościowe szkolenie psychoterapeutyczne w nurcie Gestalt w Polsce i pracuję pod stałą superwizją.</p>
+        <p>W pracy terapeutycznej ważne jest dla mnie stworzenie bezpiecznej, uważnej przestrzeni, w której można przyjrzeć się sobie, swoim emocjom, potrzebom i sposobom reagowania. Do każdej osoby podchodzę indywidualnie — bez gotowych ocen i bez pośpiechu.</p>
+        <p>W relacji terapeutycznej szczególnie ważne są dla mnie szacunek, autentyczność i kontakt. Towarzyszę w procesie, w którym to, co trudne lub dotąd niewidoczne, może stopniowo stać się bardziej zrozumiałe.</p>
         <ul class="credentials">
-          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Certyfikowana psychoterapeutka Gestalt</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Ukończone całościowe szkolenie psychoterapeutyczne Gestalt</li>
           <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Arteterapeutka</li>
-          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Stała superwizja u certyfikowanych superwizorów</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Stała superwizja pracy terapeutycznej</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Psychoterapia indywidualna osób dorosłych</li>
         </ul>
       </div>
     </div>
@@ -403,10 +406,10 @@
       <div class="approach-body">
         <p class="eyebrow">Podejście</p>
         <h2 style="margin-bottom:20px;">Czym jest terapia Gestalt</h2>
-        <p>W psychologii Gestalt to, co zauważamy najsilniej, nazywamy <strong>figurą</strong> — reszta pozostaje <strong>tłem</strong>. W terapii pracujemy właśnie na tej granicy: trudna emocja, powtarzający się konflikt czy cielesne napięcie stają się figurą, którą razem oglądamy, zanim ustąpi miejsca czemuś nowemu.</p>
-        <p>Nie analizujemy przeszłości z dystansu — pracujemy w kontakcie, tu i teraz, bo to, co dzieje się między nami w gabinecie, jest żywym odbiciem tego, jak funkcjonujesz na zewnątrz.</p>
-        <p>W podejściu Gestalt człowiek jest postrzegany jako aktywna jednostka, która dzięki rozwojowi samoświadomości i sprawczości może osiągać większy dobrostan. Dlatego tak ważne jest życie w zgodzie ze sobą, uważność na własne ciało oraz kontakt z tym, co dzieje się wewnątrz.</p>
-        <p><strong>Arteterapia</strong> jest procesem twórczym, który umożliwia komunikację niewerbalną, a tym samym daje więcej przestrzeni do wyrażania myśli, emocji i wewnętrznych doświadczeń. W swojej pracy korzystam z różnych metod artystycznych i form wyrazu, które mogą wspierać poprawę samopoczucia oraz jakości życia.</p>
+        <p>Gestalt to podejście, w którym ważne jest to, czego doświadczasz teraz — w emocjach, ciele, relacjach i codziennych wyborach. W terapii nie chodzi o szybkie oceny ani gotowe porady. Przyglądamy się temu, co powraca, co boli, co zatrzymuje i co potrzebuje zostać zauważone.</p>
+        <p>W Gestalt mówi się o „<strong>figurze</strong>” — czyli tym, co w danym momencie wysuwa się na pierwszy plan. Może to być napięcie, lęk, konflikt, trudność w relacji albo potrzeba, której długo nie było miejsca usłyszeć.</p>
+        <p>Praca terapeutyczna pomaga lepiej rozumieć siebie, swoje reakcje i sposób bycia w kontakcie z innymi. Dzięki temu możliwe staje się podejmowanie bardziej świadomych decyzji i szukanie nowych sposobów radzenia sobie z trudnościami.</p>
+        <p><strong>Arteterapia</strong> wykorzystuje proces twórczy jako sposób wyrażania i poznawania siebie. Nie wymaga zdolności artystycznych — ważniejsze jest doświadczenie, symbol, emocja i to, co może pojawić się w trakcie pracy.</p>
       </div>
       <div class="fg-figure">
         <svg viewBox="0 0 320 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustracja figury i tła: dwie korony drzew tworzące w przestrzeni między nimi trzeci kształt">
@@ -439,14 +442,17 @@
         <h2>Z czym najczęściej do mnie przychodzą</h2>
         <p>Zgłaszają się do mnie osoby w bardzo różnych momentach życia — nie trzeba mieć nazwy na to, co się dzieje, żeby zacząć rozmawiać.</p>
       </div>
+      <p style="max-width:640px;color:var(--text-soft);margin:-22px 0 34px;">Nie musisz mieć gotowej nazwy na to, co się dzieje. Czasem wystarczy poczucie, że coś od dłuższego czasu jest trudne, męczące albo powtarza się w podobny sposób.</p>
       <ul class="path-list">
-        <li>Stany lękowe i chroniczne napięcie</li>
+        <li>Stany lękowe i przewlekłe napięcie</li>
         <li>Kryzysy życiowe i trudne decyzje</li>
         <li>Trudności w relacjach i bliskości</li>
         <li>Żałoba i doświadczenie straty</li>
         <li>Niskie poczucie własnej wartości</li>
         <li>Wypalenie i przeciążenie</li>
-        <li>Chęć lepszego rozumienia siebie — bez konkretnego „problemu”</li>
+        <li>Trudność w stawianiu granic</li>
+        <li>Poczucie utknięcia</li>
+        <li>Chęć lepszego zrozumienia siebie — bez konkretnego „problemu”</li>
       </ul>
     </div>
   </section>
@@ -466,10 +472,10 @@
         <h2>Przebieg współpracy</h2>
       </div>
       <div class="steps">
-        <div class="step"><div class="step-num">01</div><div><h3>Pierwszy kontakt</h3><p>Piszesz lub dzwonisz. Krótko odpowiadam i umawiamy termin pierwszego spotkania.</p></div></div>
-        <div class="step"><div class="step-num">02</div><div><h3>Konsultacja wstępna (50 min)</h3><p>Poznajemy się. Opowiadasz, z czym przychodzisz, ja pytam — oboje sprawdzamy, czy dobrze nam się rozmawia.</p></div></div>
-        <div class="step"><div class="step-num">03</div><div><h3>Kontrakt terapeutyczny</h3><p>Ustalamy zasady współpracy: częstotliwość spotkań, cel, ramy czasowe i finansowe.</p></div></div>
-        <div class="step"><div class="step-num">04</div><div><h3>Regularne spotkania</h3><p>50 minut, zwykle raz w tygodniu — wspólna praca w rytmie, który daje przestrzeń na realną zmianę.</p></div></div>
+        <div class="step"><div class="step-num">01</div><div><h3>Pierwszy kontakt</h3><p>Piszesz lub dzwonisz. Krótko odpowiadam na pytania i umawiamy termin pierwszej konsultacji.</p></div></div>
+        <div class="step"><div class="step-num">02</div><div><h3>Konsultacja wstępna / pierwsze spotkanie (50 min)</h3><p>Poznajemy się. Opowiadasz, z czym przychodzisz, ja zadaję pytania i wspólnie sprawdzamy, czy taka forma pracy będzie dla Ciebie odpowiednia. Pierwsze spotkanie nie zobowiązuje do kontynuacji terapii.</p></div></div>
+        <div class="step"><div class="step-num">03</div><div><h3>Ustalenie zasad współpracy</h3><p>Ustalamy częstotliwość spotkań, zasady odwoływania sesji, cel pracy, poufność oraz kwestie organizacyjne i finansowe.</p></div></div>
+        <div class="step"><div class="step-num">04</div><div><h3>Regularne spotkania</h3><p>Sesje trwają 50 minut i zwykle odbywają się raz w tygodniu. Stały rytm spotkań daje przestrzeń na pogłębioną pracę i realną zmianę.</p></div></div>
       </div>
     </div>
   </section>
@@ -483,7 +489,7 @@
       </div>
       <div class="pricing">
         <div class="price-card">
-          <span class="label">Konsultacja wstępna</span>
+          <span class="label">Konsultacja wstępna / pierwsze spotkanie</span>
           <span class="amount">220 zł</span>
           <span class="duration">50 minut</span>
         </div>
@@ -498,7 +504,7 @@
           <span class="duration">50 minut</span>
         </div>
       </div>
-      <p class="pricing-note">Pierwsze spotkanie umawiamy telefonicznie lub mailowo — chętnie odpowiem na pytania jeszcze przed decyzją.</p>
+      <p class="pricing-note">Pierwsze spotkanie umawiamy telefonicznie lub mailowo. Płatność możliwa jest przelewem lub gotówką. Sesję można odwołać najpóźniej [tu wpisz zasadę odwoływania sesji] przed terminem.</p>
     </div>
   </section>
 
@@ -513,19 +519,35 @@
       <div class="faq">
         <details>
           <summary>Czy terapia online jest tak samo skuteczna jak stacjonarna?<span class="icon">+</span></summary>
-          <p>W nurcie Gestalt kontakt jest najważniejszy, a dobrej jakości połączenie wideo pozwala go zachować. Wiele osób zaczyna online i to działa równie dobrze jak spotkania w gabinecie.</p>
+          <p>Dla wielu osób terapia online może być równie pomocna jak spotkania w gabinecie, pod warunkiem że masz spokojne, prywatne miejsce i stabilne połączenie. Na pierwszej konsultacji możemy wspólnie sprawdzić, czy taka forma pracy będzie dla Ciebie odpowiednia.</p>
         </details>
         <details>
           <summary>Ile trwa terapia?<span class="icon">+</span></summary>
-          <p>To zależy od tego, z czym przychodzisz. Czasem wystarczy kilka spotkań konsultacyjnych, czasem proces trwa rok lub dłużej — decydujemy o tym wspólnie, regularnie to sprawdzając.</p>
+          <p>To zależy od tego, z czym przychodzisz i czego potrzebujesz. Czasem wystarcza kilka konsultacji, a czasem pomocna jest dłuższa, regularna praca. Tempo i cel terapii ustalamy wspólnie.</p>
         </details>
         <details>
           <summary>Czy mogę zrezygnować w dowolnym momencie?<span class="icon">+</span></summary>
-          <p>Tak. Poproszę jedynie o rozmowę o zakończeniu na jednym ze spotkań — to ważna część procesu, nie formalność.</p>
+          <p>Tak. Możesz zakończyć terapię, kiedy uznasz, że tego potrzebujesz. Warto jednak porozmawiać o tym na sesji, żeby domknąć proces w bezpieczny sposób.</p>
         </details>
         <details>
           <summary>Czy to, o czym rozmawiamy, zostaje w gabinecie?<span class="icon">+</span></summary>
-          <p>Tak — obowiązuje mnie tajemnica zawodowa i kodeks etyczny psychoterapeuty.</p>
+          <p>Tak. Obowiązuje mnie tajemnica zawodowa i zasada poufności. Wyjątkiem są sytuacje określone prawem, np. bezpośrednie zagrożenie życia lub zdrowia.</p>
+        </details>
+        <details>
+          <summary>Czy pierwsza konsultacja zobowiązuje do rozpoczęcia terapii?<span class="icon">+</span></summary>
+          <p>Nie. Pierwsze spotkanie służy temu, żeby się poznać, porozmawiać o trudnościach i sprawdzić, czy chcemy dalej pracować razem.</p>
+        </details>
+        <details>
+          <summary>Czy pracujesz z parami, dziećmi lub młodzieżą?<span class="icon">+</span></summary>
+          <p>Prowadzę psychoterapię indywidualną osób dorosłych.</p>
+        </details>
+        <details>
+          <summary>Jak umówić pierwsze spotkanie?<span class="icon">+</span></summary>
+          <p>Najprościej napisać maila albo zadzwonić. W wiadomości wystarczy krótko napisać, że chcesz umówić konsultację — nie musisz szczegółowo opisywać swojej historii.</p>
+        </details>
+        <details>
+          <summary>Czy przyjmujesz osoby w trakcie szkoły psychoterapii?<span class="icon">+</span></summary>
+          <p>Tak — zapraszam również osoby będące w trakcie szkoły psychoterapii, które poszukują własnej terapii.</p>
         </details>
       </div>
     </div>
@@ -538,14 +560,14 @@
         <div>
           <p class="eyebrow" style="color:var(--accent-gold);">Kontakt</p>
           <h2>Napisz — chętnie odpowiem.</h2>
-          <p>Pierwszy krok bywa najtrudniejszy. Możesz go zrobić mailem, telefonicznie, albo po prostu zostawiając wiadomość.</p>
+          <p>Pierwszy krok bywa najtrudniejszy. Możesz napisać maila, zadzwonić albo zostawić wiadomość. Odpowiem na pytania i zaproponuję możliwy termin konsultacji.</p>
           <ul class="contact-list">
             <li><svg viewBox="0 0 20 20" fill="none"><path d="M3 5l7 6 7-6M4 4h12a1 1 0 011 1v10a1 1 0 01-1 1H4a1 1 0 01-1-1V5a1 1 0 011-1z" stroke="currentColor" stroke-width="1.4"/></svg> kontakt@wsroddrzew.pl</li>
-            <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 3h3l2 5-2 1a10 10 0 005 5l1-2 5 2v3a1 1 0 01-1 1C9.6 18 2 10.4 2 4a1 1 0 011-1z" stroke="currentColor" stroke-width="1.4"/></svg> +48 600 000 000</li>
-            <li><svg viewBox="0 0 20 20" fill="none"><path d="M10 2a6 6 0 016 6c0 4.5-6 10-6 10S4 12.5 4 8a6 6 0 016-6z" stroke="currentColor" stroke-width="1.4"/><circle cx="10" cy="8" r="2" stroke="currentColor" stroke-width="1.4"/></svg> ul. Leśna 12/3, 30-001 Kraków</li>
-            <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M10 6v4l3 2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg> Konsultacje: pon.–czw., 9:00–19:00</li>
+            <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 3h3l2 5-2 1a10 10 0 005 5l1-2 5 2v3a1 1 0 01-1 1C9.6 18 2 10.4 2 4a1 1 0 011-1z" stroke="currentColor" stroke-width="1.4"/></svg> +48 XXX XXX XXX</li>
+            <li><svg viewBox="0 0 20 20" fill="none"><path d="M10 2a6 6 0 016 6c0 4.5-6 10-6 10S4 12.5 4 8a6 6 0 016-6z" stroke="currentColor" stroke-width="1.4"/><circle cx="10" cy="8" r="2" stroke="currentColor" stroke-width="1.4"/></svg> [adres gabinetu]</li>
+            <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M10 6v4l3 2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg> Konsultacje: [dni i godziny]</li>
           </ul>
-          <a class="btn" href="mailto:kontakt@wsroddrzew.pl">Napisz maila</a>
+          <a class="btn" href="mailto:kontakt@wsroddrzew.pl">Umów konsultację</a>
         </div>
         <div class="contact-clearing">
           <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -564,11 +586,12 @@
 <footer>
   <svg class="deco deco-footer" viewBox="0 0 120 220" aria-hidden="true"><use href="#sprig"/></svg>
   <div class="wrap">
-    <p>© 2026 Wśród Drzew — Gabinet Psychoterapii Gestalt i Arteterapii, Magdalena Lech.</p>
+    <p>© Wśród Drzew — Gabinet Psychoterapii Gestalt i Arteterapii</p>
     <div class="foot-links">
-      <a href="#o-mnie">O mnie</a>
-      <a href="#cennik">Cennik</a>
+      <a href="#">Polityka prywatności</a>
+      <a href="#">RODO</a>
       <a href="#kontakt">Kontakt</a>
+      <a href="#">Dane gabinetu</a>
       <a href="#" id="cookie-settings-link">Ustawienia cookies</a>
     </div>
   </div>
