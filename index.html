@@ -180,11 +180,10 @@
     transform:rotate(-45deg);
   }
 
-  .photo-duo{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-  .photo-duo img{width:100%;height:260px;object-fit:cover;border-radius:20px;box-shadow:var(--shadow);display:block;}
+  .photo-single{max-width:760px;margin:0 auto;}
+  .photo-single img{width:100%;height:380px;object-fit:cover;border-radius:20px;box-shadow:var(--shadow);display:block;}
   @media (max-width:860px){
-    .photo-duo{grid-template-columns:1fr;}
-    .photo-duo img{height:240px;}
+    .photo-single img{height:260px;}
   }
 
   /* ---------- proces / numbered ---------- */
@@ -319,7 +318,7 @@
       <a href="#o-mnie">O mnie</a>
       <a href="#podejscie">Podejście</a>
       <a href="#dla-kogo">Dla kogo</a>
-      <a href="#proces">Jak pracujemy</a>
+      <a href="#proces">Jak pracuję</a>
       <a href="#cennik">Cennik</a>
       <a href="#pytania">Pytania</a>
     </nav>
@@ -332,7 +331,7 @@
         <a href="#o-mnie">O mnie</a>
         <a href="#podejscie">Podejście</a>
         <a href="#dla-kogo">Dla kogo</a>
-        <a href="#proces">Jak pracujemy</a>
+        <a href="#proces">Jak pracuję</a>
         <a href="#cennik">Cennik</a>
         <a href="#pytania">Pytania</a>
         <a class="btn" href="#kontakt">Umów konsultację</a>
@@ -454,9 +453,7 @@
 
   <!-- GALERIA -->
   <section class="clearing" style="padding-top:0;">
-    <div class="wrap photo-duo">
-      <img src="images/droga.jpg" alt="Polna droga wśród drzew o zachodzie słońca">
-      <img src="images/staw.jpg" alt="Staw otoczony drzewami w parku">
+    <div class="wrap photo-single">
       <img src="images/sosny.jpg" alt="Wysokie sosny w lesie">
     </div>
   </section>
@@ -465,15 +462,14 @@
   <section class="clearing alt" id="proces">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow">Jak pracujemy</p>
+        <p class="eyebrow">Jak pracuję</p>
         <h2>Przebieg współpracy</h2>
       </div>
       <div class="steps">
         <div class="step"><div class="step-num">01</div><div><h3>Pierwszy kontakt</h3><p>Piszesz lub dzwonisz. Krótko odpowiadam i umawiamy termin pierwszego spotkania.</p></div></div>
         <div class="step"><div class="step-num">02</div><div><h3>Konsultacja wstępna (50 min)</h3><p>Poznajemy się. Opowiadasz, z czym przychodzisz, ja pytam — oboje sprawdzamy, czy dobrze nam się rozmawia.</p></div></div>
         <div class="step"><div class="step-num">03</div><div><h3>Kontrakt terapeutyczny</h3><p>Ustalamy zasady współpracy: częstotliwość spotkań, cel, ramy czasowe i finansowe.</p></div></div>
-        <div class="step"><div class="step-num">04</div><div><h3>Regularne spotkania</h3><p>45–50 minut, zwykle raz w tygodniu — wspólna praca w rytmie, który daje przestrzeń na realną zmianę.</p></div></div>
-        <div class="step"><div class="step-num">05</div><div><h3>Przegląd i zakończenie</h3><p>Co jakiś czas zatrzymujemy się, by sprawdzić, gdzie jesteśmy. Terapia kończy się, gdy oboje czujemy, że tak jest dobrze.</p></div></div>
+        <div class="step"><div class="step-num">04</div><div><h3>Regularne spotkania</h3><p>50 minut, zwykle raz w tygodniu — wspólna praca w rytmie, który daje przestrzeń na realną zmianę.</p></div></div>
       </div>
     </div>
   </section>
@@ -493,12 +489,12 @@
         </div>
         <div class="price-card">
           <span class="label">Sesja indywidualna · gabinet</span>
-          <span class="amount">200 zł</span>
+          <span class="amount">250 zł</span>
           <span class="duration">50 minut</span>
         </div>
         <div class="price-card">
           <span class="label">Sesja indywidualna · online</span>
-          <span class="amount">190 zł</span>
+          <span class="amount">250 zł</span>
           <span class="duration">50 minut</span>
         </div>
       </div>
