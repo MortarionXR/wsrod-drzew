@@ -162,8 +162,7 @@
   /* ---------- podejscie / figure-ground ---------- */
   .approach{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
   .approach-body p{color:var(--text-soft);margin:0 0 16px;}
-  .fg-figure{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:32px;box-shadow:var(--shadow);}
-  .fg-figure svg{width:100%;height:auto;}
+  .fg-figure img{width:100%;height:380px;object-fit:cover;border-radius:20px;box-shadow:var(--shadow);display:block;}
   .fg-caption{font-size:13.5px;color:var(--text-soft);margin-top:16px;text-align:center;font-style:italic;}
 
   /* ---------- dla kogo / wandering path ---------- */
@@ -414,23 +413,7 @@
         <p><strong>Arteterapia</strong> wykorzystuje proces twórczy jako sposób wyrażania i poznawania siebie. Nie wymaga zdolności artystycznych — ważniejsze jest doświadczenie, symbol, emocja i to, co może pojawić się w trakcie pracy.</p>
       </div>
       <div class="fg-figure">
-        <svg viewBox="0 0 320 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustracja figury i tła: dwie korony drzew tworzące w przestrzeni między nimi trzeci kształt">
-          <defs>
-            <linearGradient id="canopyL" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="var(--accent-2)"/>
-              <stop offset="1" stop-color="var(--accent)"/>
-            </linearGradient>
-            <linearGradient id="canopyR" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="var(--accent)"/>
-              <stop offset="1" stop-color="var(--accent-2)"/>
-            </linearGradient>
-          </defs>
-          <rect width="320" height="260" fill="var(--bg-alt)" opacity="0.5"/>
-          <path d="M20 240C20 150 50 60 110 60C150 60 140 140 110 180C80 220 20 220 20 240Z" fill="url(#canopyL)" opacity="0.92"/>
-          <path d="M300 240C300 150 270 60 210 60C170 60 180 140 210 180C240 220 300 220 300 240Z" fill="url(#canopyR)" opacity="0.92"/>
-          <path d="M138 70C150 110 150 170 138 230C170 230 170 110 182 70C170 60 150 60 138 70Z" fill="var(--accent-gold)" opacity="0.7"/>
-          <rect width="320" height="260" filter="url(#grain)" style="mix-blend-mode:overlay" opacity="0.4"/>
-        </svg>
+        <img src="images/podejscie.jpg" alt="Paproć wyraźnie widoczna na tle rozmytej zieleni lasu">
         <p class="fg-caption">Figura i tło: to, co staje się ważne, zawsze pojawia się na tle całej reszty doświadczenia.</p>
       </div>
     </div>
