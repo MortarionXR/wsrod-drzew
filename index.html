@@ -193,28 +193,10 @@
   .step h3{font-size:18.5px;margin-bottom:6px;}
   .step p{margin:0;color:var(--text-soft);font-size:15.5px;}
 
-  /* ---------- cennik ---------- */
-  .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-  .price-card{
-    background:var(--bg-alt);border:1px solid var(--border);border-radius:16px;
-    padding:28px 24px;display:flex;flex-direction:column;gap:6px;
-  }
-  .price-card .label{font-size:14px;color:var(--text-soft);font-weight:600;}
-  .price-card .amount{font-family:"Fraunces",serif;font-size:32px;color:var(--accent);font-weight:500;}
-  .price-card .duration{font-size:13.5px;color:var(--text-soft);}
-  .pricing-note{margin-top:22px;font-size:14.5px;color:var(--text-soft);}
-
-  /* ---------- faq ---------- */
-  .faq{display:flex;flex-direction:column;gap:2px;max-width:760px;}
-  .faq details{border-bottom:1px solid var(--border);padding:18px 0;}
-  .faq summary{
-    cursor:pointer;font-family:"Fraunces",serif;font-size:18px;color:var(--text);
-    list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;
-  }
-  .faq summary::-webkit-details-marker{display:none;}
-  .faq summary .icon{color:var(--accent-2);font-size:20px;flex:none;transition:transform .15s ease;}
-  .faq details[open] summary .icon{transform:rotate(45deg);}
-  .faq p{color:var(--text-soft);margin:14px 0 0;max-width:62ch;font-size:15.5px;}
+  /* ---------- doświadczenie ---------- */
+  .credentials-block h3{font-size:21px;margin:40px 0 14px;}
+  .credentials-block h3:first-child{margin-top:0;}
+  .credentials-block > p{color:var(--text-soft);margin:0 0 18px;max-width:640px;}
 
   /* ---------- kontakt ---------- */
   .contact{
@@ -317,8 +299,7 @@
       <a href="#podejscie">Podejście</a>
       <a href="#dla-kogo">Dla kogo</a>
       <a href="#proces">Jak pracuję</a>
-      <a href="#cennik">Cennik</a>
-      <a href="#pytania">Pytania</a>
+      <a href="#doswiadczenie">Doświadczenie</a>
     </nav>
     <a class="btn" href="#kontakt">Umów konsultację</a>
     <details class="mobile-menu" id="mobile-menu">
@@ -330,8 +311,7 @@
         <a href="#podejscie">Podejście</a>
         <a href="#dla-kogo">Dla kogo</a>
         <a href="#proces">Jak pracuję</a>
-        <a href="#cennik">Cennik</a>
-        <a href="#pytania">Pytania</a>
+        <a href="#doswiadczenie">Doświadczenie</a>
         <a class="btn" href="#kontakt">Umów konsultację</a>
       </nav>
     </details>
@@ -420,21 +400,22 @@
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow">Dla kogo</p>
-        <h2>Z czym najczęściej do mnie przychodzą</h2>
-        <p>Zgłaszają się do mnie osoby w bardzo różnych momentach życia — nie trzeba mieć nazwy na to, co się dzieje, żeby zacząć rozmawiać.</p>
+        <h2>Dla kogo</h2>
+        <p>Zapraszam osoby, które doświadczają:</p>
       </div>
-      <p style="max-width:640px;color:var(--text-soft);margin:-22px 0 34px;">Nie musisz mieć gotowej nazwy na to, co się dzieje. Czasem wystarczy poczucie, że coś od dłuższego czasu jest trudne, męczące albo powtarza się w podobny sposób.</p>
       <ul class="path-list">
-        <li>Stany lękowe i przewlekłe napięcie</li>
-        <li>Kryzysy życiowe i trudne decyzje</li>
-        <li>Trudności w relacjach i bliskości</li>
-        <li>Żałoba i doświadczenie straty</li>
-        <li>Niskie poczucie własnej wartości</li>
-        <li>Wypalenie i przeciążenie</li>
-        <li>Trudność w stawianiu granic</li>
-        <li>Poczucie utknięcia</li>
-        <li>Chęć lepszego zrozumienia siebie — bez konkretnego „problemu”</li>
+        <li>smutku, depresji, obniżonego nastroju</li>
+        <li>lęku, napięcia, stresu lub poczucia ciągłego przeciążenia</li>
+        <li>kryzysów życiowych, trudnych decyzji</li>
+        <li>trudności w relacjach, samotności</li>
+        <li>obniżonego poczucia własnej wartości</li>
+        <li>zagubienia, przemęczenia lub poczucia utknięcia</li>
+        <li>żałoby, straty</li>
+        <li>trudności związanych z ciążą, porodem, połogiem lub okresem okołoporodowym</li>
+        <li>wyzwań związanych z macierzyństwem, zmianą roli życiowej albo odnajdywaniem się w nowej sytuacji</li>
+        <li>potrzeby lepszego zrozumienia siebie — także wtedy, gdy nie ma jednego konkretnego „problemu”</li>
       </ul>
+      <p style="max-width:640px;color:var(--text-soft);margin:34px 0 0;">Zapraszam również osoby będące w trakcie szkoły psychoterapii.</p>
     </div>
   </section>
 
@@ -453,83 +434,50 @@
         <h2>Przebieg współpracy</h2>
       </div>
       <div class="steps">
-        <div class="step"><div class="step-num">01</div><div><h3>Pierwszy kontakt</h3><p>Piszesz lub dzwonisz. Krótko odpowiadam na pytania i umawiamy termin pierwszej konsultacji.</p></div></div>
-        <div class="step"><div class="step-num">02</div><div><h3>Konsultacja wstępna / pierwsze spotkanie (50 min)</h3><p>Poznajemy się. Opowiadasz, z czym przychodzisz, ja zadaję pytania i wspólnie sprawdzamy, czy taka forma pracy będzie dla Ciebie odpowiednia. Pierwsze spotkanie nie zobowiązuje do kontynuacji terapii.</p></div></div>
-        <div class="step"><div class="step-num">03</div><div><h3>Ustalenie zasad współpracy</h3><p>Ustalamy częstotliwość spotkań, zasady odwoływania sesji, cel pracy, poufność oraz kwestie organizacyjne i finansowe.</p></div></div>
-        <div class="step"><div class="step-num">04</div><div><h3>Regularne spotkania</h3><p>Sesje trwają 50 minut i zwykle odbywają się raz w tygodniu. Stały rytm spotkań daje przestrzeń na pogłębioną pracę i realną zmianę.</p></div></div>
+        <div class="step"><div class="step-num">01</div><div><h3>Pierwszy kontakt</h3><p>Piszesz lub dzwonisz i umawiamy termin pierwszej konsultacji.</p></div></div>
+        <div class="step"><div class="step-num">02</div><div><h3>Pierwsze spotkanie / Konsultacje (50 min)</h3><p>Poznajemy się. Opowiadasz, z czym przychodzisz, ja zadaję pytania i wspólnie sprawdzamy, czy taka forma pracy będzie dla Ciebie odpowiednia. Następnie umawiamy się na dalsze konsultacje. Pierwsze spotkanie nie zobowiązuje do kontynuacji terapii.</p></div></div>
+        <div class="step"><div class="step-num">03</div><div><h3>Ustalenie zasad współpracy</h3><p>Określamy Twoje potrzeby i cele terapii oraz zasady współpracy.</p></div></div>
+        <div class="step"><div class="step-num">04</div><div><h3>Regularne spotkania</h3><p>Sesje trwają 50 minut i odbywają się raz w tygodniu. Stała częstotliwość spotkań daje przestrzeń na pogłębioną pracę i realną zmianę.</p></div></div>
       </div>
     </div>
   </section>
 
-  <!-- CENNIK -->
-  <section class="clearing" id="cennik">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Cennik</p>
-        <h2>Koszt sesji</h2>
-      </div>
-      <div class="pricing">
-        <div class="price-card">
-          <span class="label">Konsultacja wstępna / pierwsze spotkanie</span>
-          <span class="amount">220 zł</span>
-          <span class="duration">50 minut</span>
-        </div>
-        <div class="price-card">
-          <span class="label">Sesja indywidualna · gabinet</span>
-          <span class="amount">250 zł</span>
-          <span class="duration">50 minut</span>
-        </div>
-        <div class="price-card">
-          <span class="label">Sesja indywidualna · online</span>
-          <span class="amount">250 zł</span>
-          <span class="duration">50 minut</span>
-        </div>
-      </div>
-      <p class="pricing-note">Pierwsze spotkanie umawiamy telefonicznie lub mailowo. Płatność możliwa jest przelewem. Sesję można odwołać najpóźniej [tu wpisz zasadę odwoływania sesji] przed terminem.</p>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="clearing alt" id="pytania">
+  <!-- DOŚWIADCZENIE -->
+  <section class="clearing" id="doswiadczenie">
     <svg class="deco deco-faq" viewBox="0 0 120 220" aria-hidden="true"><use href="#sprig"/></svg>
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow">Pytania</p>
-        <h2>Najczęściej pytacie o to</h2>
+        <p class="eyebrow">Doświadczenie</p>
+        <h2>Moje doświadczenie zawodowe</h2>
       </div>
-      <div class="faq">
-        <details>
-          <summary>Czy terapia online jest tak samo skuteczna jak stacjonarna?<span class="icon">+</span></summary>
-          <p>Dla wielu osób terapia online może być równie pomocna jak spotkania w gabinecie, pod warunkiem że masz spokojne, prywatne miejsce i stabilne połączenie. Na pierwszej konsultacji możemy wspólnie sprawdzić, czy taka forma pracy będzie dla Ciebie odpowiednia.</p>
-        </details>
-        <details>
-          <summary>Ile trwa terapia?<span class="icon">+</span></summary>
-          <p>To zależy od tego, z czym przychodzisz i czego potrzebujesz. Czasem wystarcza kilka konsultacji, a czasem pomocna jest dłuższa, regularna praca. Tempo i cel terapii ustalamy wspólnie.</p>
-        </details>
-        <details>
-          <summary>Czy mogę zrezygnować w dowolnym momencie?<span class="icon">+</span></summary>
-          <p>Tak. Możesz zakończyć terapię, kiedy uznasz, że tego potrzebujesz. Warto jednak porozmawiać o tym na sesji, żeby domknąć proces w bezpieczny sposób.</p>
-        </details>
-        <details>
-          <summary>Czy to, o czym rozmawiamy, zostaje w gabinecie?<span class="icon">+</span></summary>
-          <p>Tak. Obowiązuje mnie tajemnica zawodowa i zasada poufności. Wyjątkiem są sytuacje określone prawem, np. bezpośrednie zagrożenie życia lub zdrowia.</p>
-        </details>
-        <details>
-          <summary>Czy pierwsza konsultacja zobowiązuje do rozpoczęcia terapii?<span class="icon">+</span></summary>
-          <p>Nie. Pierwsze spotkanie służy temu, żeby się poznać, porozmawiać o trudnościach i sprawdzić, czy chcemy dalej pracować razem.</p>
-        </details>
-        <details>
-          <summary>Czy pracujesz z parami, dziećmi lub młodzieżą?<span class="icon">+</span></summary>
-          <p>Prowadzę psychoterapię indywidualną osób dorosłych.</p>
-        </details>
-        <details>
-          <summary>Jak umówić pierwsze spotkanie?<span class="icon">+</span></summary>
-          <p>Najprościej napisać maila albo zadzwonić. W wiadomości wystarczy krótko napisać, że chcesz umówić konsultację — nie musisz szczegółowo opisywać swojej historii.</p>
-        </details>
-        <details>
-          <summary>Czy przyjmujesz osoby w trakcie szkoły psychoterapii?<span class="icon">+</span></summary>
-          <p>Tak — zapraszam również osoby będące w trakcie szkoły psychoterapii, które poszukują własnej terapii.</p>
-        </details>
+      <div class="credentials-block">
+        <h3>Wykształcenie i kwalifikacje</h3>
+        <ul class="path-list">
+          <li>Psychologia — Szkoła Wyższa Psychologii Społecznej w Warszawie</li>
+          <li>Arteterapia — studia podyplomowe w Akademii Pedagogiki Specjalnej</li>
+          <li>Czteroletnie szkolenie w Szkole Psychoterapii Gestalt w Warszawie</li>
+          <li>Europejski Certyfikat Psychoterapii Gestalt — EAGT</li>
+        </ul>
+
+        <h3>Doświadczenie zawodowe</h3>
+        <p>Doświadczenie zawodowe zdobywałam między innymi:</p>
+        <ul class="path-list">
+          <li>na warsztatach terapii zajęciowej w Instytucie Psychiatrii i Neurologii w Warszawie</li>
+          <li>w Ośrodku Pomocy Społecznej — pracując z seniorami oraz osobami doświadczającymi wykluczenia społecznego</li>
+          <li>w Fundacji SYNAPSIS — wspierając osoby ze spektrum autyzmu</li>
+          <li>w Poradni Zdrowia Psychicznego w Instytucie Psychiatrii i Neurologii w Warszawie</li>
+        </ul>
+
+        <h3>Obszary doświadczenia</h3>
+        <p>W pracy zawodowej miałam kontakt między innymi z osobami:</p>
+        <ul class="path-list">
+          <li>w kryzysach życiowych i emocjonalnych</li>
+          <li>doświadczającymi trudności w relacjach</li>
+          <li>mierzącymi się z wykluczeniem społecznym</li>
+          <li>ze spektrum autyzmu</li>
+          <li>w wieku senioralnym</li>
+          <li>potrzebującymi wsparcia psychologicznego i terapeutycznego</li>
+        </ul>
       </div>
     </div>
   </section>
