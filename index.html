@@ -207,6 +207,8 @@
   .contact p{color:color-mix(in srgb, var(--on-accent) 78%, transparent);}
   .contact-list{list-style:none;margin:26px 0 0;padding:0;display:flex;flex-direction:column;gap:14px;}
   .contact-list li{display:flex;gap:12px;align-items:flex-start;font-size:15.5px;}
+  .contact-list a{color:inherit;text-decoration:underline;text-decoration-color:color-mix(in srgb, var(--on-accent) 40%, transparent);}
+  .contact-list a:hover{text-decoration-color:currentColor;}
   .contact-list svg{flex:none;width:19px;height:19px;margin-top:2px;}
   .contact .btn{background:var(--on-accent);color:var(--accent);border-color:var(--on-accent);margin-top:26px;}
   .contact-photo img{width:100%;height:auto;border-radius:18px;box-shadow:0 25px 50px -20px rgba(0,0,0,0.45);display:block;}
@@ -492,14 +494,14 @@
         <div>
           <p class="eyebrow" style="color:var(--accent-gold);">Kontakt</p>
           <h2>Napisz — chętnie odpowiem.</h2>
-          <p>Pierwszy krok bywa najtrudniejszy. Możesz napisać maila, zadzwonić albo zostawić wiadomość. Odpowiem na pytania i zaproponuję możliwy termin konsultacji.</p>
+          <p>Zapraszam do dwóch lokalizacji w Warszawie:</p>
           <ul class="contact-list">
-            <li><svg viewBox="0 0 20 20" fill="none"><path d="M3 5l7 6 7-6M4 4h12a1 1 0 011 1v10a1 1 0 01-1 1H4a1 1 0 01-1-1V5a1 1 0 011-1z" stroke="currentColor" stroke-width="1.4"/></svg> kontakt@wsroddrzew.pl</li>
-            <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 3h3l2 5-2 1a10 10 0 005 5l1-2 5 2v3a1 1 0 01-1 1C9.6 18 2 10.4 2 4a1 1 0 011-1z" stroke="currentColor" stroke-width="1.4"/></svg> +48 XXX XXX XXX</li>
-            <li><svg viewBox="0 0 20 20" fill="none"><path d="M10 2a6 6 0 016 6c0 4.5-6 10-6 10S4 12.5 4 8a6 6 0 016-6z" stroke="currentColor" stroke-width="1.4"/><circle cx="10" cy="8" r="2" stroke="currentColor" stroke-width="1.4"/></svg> [adres gabinetu]</li>
-            <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M10 6v4l3 2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg> Konsultacje: [dni i godziny]</li>
+            <li><svg viewBox="0 0 20 20" fill="none"><path d="M10 2a6 6 0 016 6c0 4.5-6 10-6 10S4 12.5 4 8a6 6 0 016-6z" stroke="currentColor" stroke-width="1.4"/><circle cx="10" cy="8" r="2" stroke="currentColor" stroke-width="1.4"/></svg> <span>Centrum Psychoterapii Help<br>ul. Chmielna 116/118, 00-801 Warszawa</span></li>
+            <li><svg viewBox="0 0 20 20" fill="none"><path d="M10 2a6 6 0 016 6c0 4.5-6 10-6 10S4 12.5 4 8a6 6 0 016-6z" stroke="currentColor" stroke-width="1.4"/><circle cx="10" cy="8" r="2" stroke="currentColor" stroke-width="1.4"/></svg> <span>Most do Siebie<br>ul. Domaniewska 22, 02-672 Warszawa</span></li>
+            <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 3h3l2 5-2 1a10 10 0 005 5l1-2 5 2v3a1 1 0 01-1 1C9.6 18 2 10.4 2 4a1 1 0 011-1z" stroke="currentColor" stroke-width="1.4"/></svg> <a href="tel:+48504191990">504-191-990</a></li>
+            <li><svg viewBox="0 0 20 20" fill="none"><path d="M3 5l7 6 7-6M4 4h12a1 1 0 011 1v10a1 1 0 01-1 1H4a1 1 0 01-1-1V5a1 1 0 011-1z" stroke="currentColor" stroke-width="1.4"/></svg> <a href="mailto:magdalena.lech@onet.eu">magdalena.lech@onet.eu</a></li>
           </ul>
-          <a class="btn" href="mailto:kontakt@wsroddrzew.pl">Umów konsultację</a>
+          <a class="btn" href="mailto:magdalena.lech@onet.eu">Umów konsultację</a>
         </div>
       </div>
     </div>
