@@ -3,11 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wśród Drzew — Gabinet Psychoterapii Gestalt i Arteterapii</title>
-<meta name="description" content="Magdalena Lech — certyfikowana psychoterapeutka Gestalt i arteterapeutka. Konsultacje i terapia indywidualna online.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Psychoterapia Gestalt online – Magdalena Lech | Wśród Drzew</title>
+<meta name="description" content="Psychoterapia Gestalt i arteterapia online. Magdalena Lech – psycholożka, psychoterapeutka Gestalt (certyfikat EAGT). Wsparcie okołoporodowe. Sesja 50 min – 220 zł.">
+<script>
+  /* Google Consent Mode v2 – domyślnie brak zgody. Musi stać PRZED kodem Google Tag Managera. */
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  var wdConsent = null;
+  try { wdConsent = localStorage.getItem('wsroddrzew-cookie-consent'); } catch (e) {}
+  var wdGranted = wdConsent === 'accepted' ? 'granted' : 'denied';
+  gtag('consent', 'default', {
+    ad_storage: wdGranted,
+    analytics_storage: wdGranted,
+    ad_user_data: wdGranted,
+    ad_personalization: 'denied',
+    wait_for_update: 500
+  });
+  gtag('set', 'ads_data_redaction', true);
+</script>
+<!-- TUTAJ wklej kod Google Tag Managera (część do <head>, z identyfikatorem GTM-XXXXXXX) -->
+<style>
+  /* Czcionki hostowane lokalnie (bez łączenia z serwerami Google) */
+  @font-face{font-family:"Fraunces";font-style:normal;font-display:swap;font-weight:100 900;
+    src:url(fonts/fraunces-latin-ext-opsz-normal.woff2) format("woff2-variations");
+    unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+  @font-face{font-family:"Fraunces";font-style:normal;font-display:swap;font-weight:100 900;
+    src:url(fonts/fraunces-latin-opsz-normal.woff2) format("woff2-variations");
+    unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+  @font-face{font-family:"Karla";font-style:normal;font-display:swap;font-weight:200 800;
+    src:url(fonts/karla-latin-ext-wght-normal.woff2) format("woff2-variations");
+    unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+  @font-face{font-family:"Karla";font-style:normal;font-display:swap;font-weight:200 800;
+    src:url(fonts/karla-latin-wght-normal.woff2) format("woff2-variations");
+    unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+</style>
 <style>
   [hidden]{display:none!important;}
   :root{
@@ -217,6 +246,30 @@
   .contact .btn{background:var(--on-accent);color:var(--accent);border-color:var(--on-accent);margin-top:26px;}
   .contact-photo img{width:100%;height:auto;border-radius:18px;box-shadow:0 25px 50px -20px rgba(0,0,0,0.45);display:block;}
 
+
+  .hero-sub{font-family:"Fraunces",serif;font-size:19px;color:var(--accent-2);margin:16px 0 0;}
+  .hero p.lede{margin-top:18px;}
+
+  /* ---------- formularz kontaktowy ---------- */
+  .contact-form{margin-top:28px;display:grid;gap:14px;}
+  .contact-form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .contact-form label{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;}
+  .contact-form label span.opt{font-weight:400;opacity:.75;}
+  .contact-form input[type=text],.contact-form input[type=email],.contact-form input[type=tel],.contact-form textarea{
+    font:inherit;font-size:15.5px;color:var(--text);background:var(--on-accent);
+    border:1px solid transparent;border-radius:10px;padding:11px 13px;width:100%;
+  }
+  .contact-form textarea{min-height:76px;resize:vertical;}
+  .contact-form input:focus-visible,.contact-form textarea:focus-visible{outline:2px solid var(--accent-gold);outline-offset:1px;}
+  .contact-form .consent{flex-direction:row;align-items:flex-start;gap:10px;font-weight:400;font-size:13.5px;line-height:1.5;}
+  .contact-form .consent input{margin-top:3px;width:17px;height:17px;flex:none;accent-color:var(--accent-gold);}
+  .contact-form .hint{font-size:13px;margin:0;color:color-mix(in srgb, var(--on-accent) 72%, transparent);}
+  .contact-form button.btn{margin-top:4px;justify-self:start;cursor:pointer;}
+  .contact-form .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;}
+  .form-status{font-size:14.5px;margin:0;padding:12px 14px;border-radius:10px;background:color-mix(in srgb, var(--on-accent) 14%, transparent);}
+  .form-status[hidden]{display:none;}
+  @media (max-width:640px){ .contact-form .row{grid-template-columns:1fr;} }
+
   /* ---------- footer ---------- */
   footer{padding:36px 0 48px;position:relative;}
   footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;}
@@ -264,6 +317,7 @@
 </style>
 </head>
 <body>
+<!-- TUTAJ wklej część <noscript> kodu Google Tag Managera -->
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
@@ -338,6 +392,7 @@
       <div>
         <p class="eyebrow">Psychoterapia Gestalt i arteterapia online</p>
         <h1>Spotkanie z sobą,<br>tu i teraz.</h1>
+        <p class="hero-sub">Magdalena Lech · psychoterapeutka Gestalt i arteterapeutka · sesje online</p>
         <p class="lede">Pomagam osobom, które doświadczają napięcia, lęku, przeciążenia, trudności w relacjach lub kryzysu życiowego. Towarzyszę również młodym mamom i kobietom w ciąży w okresie okołoporodowym. Pracuję uważnie, w kontakcie i w tempie, które pozwala bezpiecznie przyjrzeć się temu, co ważne.</p>
         <div class="hero-ctas">
           <a class="btn" href="#kontakt">Umów konsultację</a>
@@ -503,13 +558,39 @@
         </div>
         <div>
           <h2 style="color:var(--accent-gold);margin:0 0 14px;">Kontakt</h2>
-          <p>Zapraszam na sesje online.</p>
+          <p>Zapraszam na sesje online. Zadzwoń, napisz lub zostaw kontakt w formularzu — odpowiem najszybciej, jak to możliwe.</p>
           <ul class="contact-list">
             <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M10 6v4l3 2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg> <span>Sesja online · 50 minut · 220 zł</span></li>
             <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 3h3l2 5-2 1a10 10 0 005 5l1-2 5 2v3a1 1 0 01-1 1C9.6 18 2 10.4 2 4a1 1 0 011-1z" stroke="currentColor" stroke-width="1.4"/></svg> <a href="tel:+48504191990">504-191-990</a></li>
             <li><svg viewBox="0 0 20 20" fill="none"><path d="M3 5l7 6 7-6M4 4h12a1 1 0 011 1v10a1 1 0 01-1 1H4a1 1 0 01-1-1V5a1 1 0 011-1z" stroke="currentColor" stroke-width="1.4"/></svg> <a href="mailto:magdalena.lech@onet.eu">magdalena.lech@onet.eu</a></li>
           </ul>
-          <a class="btn" href="mailto:magdalena.lech@onet.eu">Umów konsultację</a>
+          <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="post" novalidate>
+            <!-- WDROŻENIE: wiadomości trafiają na magdalena.lech@onet.eu przez Web3Forms.
+                 Klucz (access key) generuje się na web3forms.com, podając ten adres e-mail — przyjdzie na tę skrzynkę.
+                 Wklej go w polu access_key poniżej. Po udanym wysłaniu strona przechodzi na /dziekuje. -->
+            <input type="hidden" name="access_key" value="WKLEJ_TUTAJ_ACCESS_KEY">
+            <input type="hidden" name="subject" value="Nowe zapytanie o konsultację – strona Wśród Drzew">
+            <input type="hidden" name="from_name" value="Strona Wśród Drzew">
+            <div class="row">
+              <label>Imię
+                <input type="text" name="imie" autocomplete="given-name" required>
+              </label>
+              <label>Telefon lub e-mail
+                <input type="text" name="kontakt" autocomplete="email" required>
+              </label>
+            </div>
+            <label><span>Preferowane dni i godziny <span class="opt">(opcjonalnie)</span></span>
+              <textarea name="terminy" placeholder="np. wtorki po 17:00, czwartki rano"></textarea>
+            </label>
+            <p class="hint">Proszę nie opisywać tu, z czym Pan/Pani przychodzi — porozmawiamy o tym na pierwszej konsultacji.</p>
+            <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <label class="consent">
+              <input type="checkbox" name="zgoda" required>
+              <span>Wyrażam zgodę na kontakt w sprawie umówienia konsultacji. Zapoznałam/em się z <a href="polityka-prywatnosci.html">polityką prywatności</a>.</span>
+            </label>
+            <p class="form-status" id="form-status" role="status" hidden></p>
+            <button type="submit" class="btn">Wyślij — oddzwonię lub odpiszę</button>
+          </form>
         </div>
       </div>
     </div>
@@ -531,7 +612,7 @@
 
 <div class="cookie-banner" id="cookie-banner" hidden>
   <div class="cookie-banner-inner">
-    <p>Używamy plików cookie, żeby mierzyć skuteczność strony i reklam (Google). Możesz zaakceptować wszystkie pliki cookie albo odrzucić te, które nie są niezbędne do działania strony — <a href="#kontakt">napisz do nas</a>, jeśli masz pytania.</p>
+    <p>Używamy plików cookie, żeby mierzyć skuteczność strony i reklam (Google). Możesz zaakceptować wszystkie pliki cookie albo odrzucić te, które nie są niezbędne do działania strony — szczegóły znajdziesz w <a href="polityka-prywatnosci.html">polityce prywatności</a>.</p>
     <div class="cookie-banner-actions">
       <button type="button" class="btn ghost" id="cookie-reject">Odrzuć</button>
       <button type="button" class="btn" id="cookie-accept">Akceptuję</button>
@@ -553,10 +634,18 @@
     });
   }
 
-  function loadMarketingScripts(){
-    // Miejsce na docelowy kod Google Tag Managera.
-    // Wklej tu fragment <script> z panelu GTM (ten z sekcji <head>) —
-    // uruchomi się dopiero po zaakceptowaniu cookies przez użytkownika.
+  // Przekazuje decyzję z banera do Google (Consent Mode v2).
+  // Reklamy personalizowane (remarketing) pozostają zawsze wyłączone.
+  function updateConsent(accepted){
+    var v = accepted ? "granted" : "denied";
+    if (typeof gtag === "function") {
+      gtag("consent", "update", {
+        ad_storage: v,
+        analytics_storage: v,
+        ad_user_data: v,
+        ad_personalization: "denied"
+      });
+    }
   }
 
   function getConsent(){
@@ -567,25 +656,59 @@
   }
 
   var consent = getConsent();
-  if (consent === "accepted") {
-    loadMarketingScripts();
-  } else if (consent !== "rejected") {
+  // Zapisaną zgodę odczytuje już kod w <head>; tu tylko pokazujemy baner, jeśli brak decyzji.
+  if (consent !== "accepted" && consent !== "rejected") {
     banner.hidden = false;
   }
 
   acceptBtn.addEventListener("click", function(){
     setConsent("accepted");
     banner.hidden = true;
-    loadMarketingScripts();
+    updateConsent(true);
   });
   rejectBtn.addEventListener("click", function(){
     setConsent("rejected");
     banner.hidden = true;
+    updateConsent(false);
   });
   if (settingsLink) {
     settingsLink.addEventListener("click", function(e){
       e.preventDefault();
       banner.hidden = false;
+    });
+  }
+
+  // ---------- formularz kontaktowy ----------
+  var form = document.getElementById("contact-form");
+  var statusEl = document.getElementById("form-status");
+  function showStatus(msg){ statusEl.textContent = msg; statusEl.hidden = false; }
+  if (form) {
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      if (form.botcheck && form.botcheck.checked) return; // pułapka na boty
+      if (!form.imie.value.trim() || !form.kontakt.value.trim()) {
+        showStatus("Proszę podać imię oraz telefon lub e-mail."); return;
+      }
+      if (!form.zgoda.checked) {
+        showStatus("Proszę zaznaczyć zgodę na kontakt."); return;
+      }
+      var endpoint = form.getAttribute("action");
+      var key = form.access_key ? form.access_key.value : "";
+      if (!endpoint || !key || key.indexOf("WKLEJ") === 0) {
+        showStatus("Formularz nie jest jeszcze podłączony. Proszę zadzwonić: 504 191 990 lub napisać: magdalena.lech@onet.eu.");
+        return;
+      }
+      var btn = form.querySelector("button[type=submit]");
+      btn.disabled = true;
+      fetch(endpoint, { method: "POST", body: new FormData(form), headers: { "Accept": "application/json" } })
+        .then(function(r){
+          if (!r.ok) throw new Error("HTTP " + r.status);
+          window.location.href = "/dziekuje";
+        })
+        .catch(function(){
+          btn.disabled = false;
+          showStatus("Nie udało się wysłać wiadomości. Proszę zadzwonić: 504 191 990 lub napisać: magdalena.lech@onet.eu.");
+        });
     });
   }
 })();
